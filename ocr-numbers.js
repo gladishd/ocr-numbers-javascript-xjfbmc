@@ -8,6 +8,23 @@ export const convert = (whatAreTheProps) => {
     '|', '_', '|', '\n',
     ' ', ' ', ' '
   ];
-  console.log("Let's see if this is true. ", zero == split, zero, split);
-
+  let one = [
+    ' ', ' ', ' ', '\n',
+    ' ', ' ', '|', '\n',
+    ' ', ' ', '|', '\n',
+    ' ', ' ', ' '
+  ];
+  console.log("Let's see if this is true. ", split);
+  if (JSON.stringify(split) == JSON.stringify(zero)) return "0";
+  if (JSON.stringify(split) == JSON.stringify(one)) return "1";
+  if (whatAreTheProps == ' _ \n'
+    + ' _|\n'
+    + '|_ \n'
+    + '   ') return "2";
+  switch (whatAreTheProps) {
+    case ' _ \n'
+      + ' _|\n'
+      + ' _|\n'
+      + '   ': return "3"
+  }
 };
