@@ -110,8 +110,8 @@ describe('ocr', () => {
   });
 
   test('converts 110101100', () => {
-    expect(convert(
-      '       _     _        _  _ \n'
+    expect(convert(''
+      + '       _     _        _  _ \n'
       + '  |  || |  || |  |  || || |\n'
       + '  |  ||_|  ||_|  |  ||_||_|\n'
       + '                           ',
